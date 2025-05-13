@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "kgpqgJ3aRl1GUttIB",
+        });
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Ziad Hamama</a>
+  
+    <i class="bx bx-menu" id="menu-icon"></i>
+  
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    
+    <button class="gradient-btn" onclick="openEmail()">Contact Me</button>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="text">
+        <h2>Hi, I'm Ziad 👋</h2>
+        <p>
+          A driven and innovative Computer Science student at Memorial University of Newfoundland, specializing in software development, app development, and data-driven technologies. With a strong academic foundation and hands-on experience, I strive to create scalable, user-centric solutions that improve digital experiences.  
+          Expected to graduate with a B.Sc. in May 2025, I actively seek opportunities to expand my technical and professional skills through internships and personal projects. I enjoy bridging the gap between data and software, building practical solutions that make systems more efficient and effective.  
+          </p>          
+        <div class="social-icons">
+          <a href="https://github.com/znahamama" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ziad-hamama/" target="_blank">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://www.instagram.com/ziadnehad/" target="_blank">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          
+          <a href="https://drive.google.com/file/d/1XLAr-6f0f8D90CWkmNauVfhtdMmkw8FN/view" target="_blank" class="btn spaced-btn small-btn">Resume</a>
+          <a href="#contact" class="btn spaced-btn small-btn">Contact</a>
+        </div>
+
+       </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/DSC_0001.jpg" alt="headshot">
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Proficient in web and app development using Flutter with Firebase, with experience in building scalable applications and intuitive user interfaces. Also skilled in creating data-driven dashboards and visualizations to support better insights and decision-making.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/flutter-logo.png" alt="html logo">
+          <span>Flutter</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/python-logo.webp" alt="css logo">
+          <span>Python</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/pandas.svg" alt="node logo">
+          <span>Pandas</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="react logo">
+          <span>HTML/CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-box">
+          <div class="project-card" onclick="location.href='app-projects.html';">
+            <img src="images/app-development.png" alt="">
+            <h3>App Development</h3>
+            <p>Explore mobile and web applications built with Flutter and Firebase, designed for seamless performance, scalability, and user-friendly experiences.</p>
+            <div class="btn">Review Projects</div>
+          </div>
+          <div class="project-card" onclick="location.href='web-projects.html';">
+                <img src="images/webdev-logo.png" alt="">
+
+                <h3>Web Development</h3>
+
+                <p>Explore modern and responsive web projects built with Next.js, HTML, CSS, and JavaScript, showcasing sleek design, smooth navigation, and professional functionality.</p>
+                <div class="btn">Review Project</div>
+          </div>
+          <div class="project-card" onclick="location.href='data-visualization.html';">
+            <img src="images/datavizlogo .png" alt="">
+
+            <h3>Data Visualization</h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in tempora voluptate provident quo quas voluptatibus dignissimos consequatur quae hic cupiditate corporis.</p>
+            <div class="btn">Review Project</div>
+          </div>
+          <div class="project-card" alt="">
+                <img src="images/Python-logo.svg.png" onclick="location.href='python-scripts.html';">
+
+                <h3>Python Scripts</h3>
+
+                <p>Explore Python automation projects featuring web scraping, API integration, cybersecurity, and task automation for efficiency and innovation.</p>
+                <div class="btn">Review Project</div>
+          </div>
+          <div class="project-card" alt="">
+                <img src="images/gamedev-logo.png" onclick="location.href='game-development.html';">
+
+                <h3>Game Development</h3>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in tempora voluptate provident quo quas voluptatibus dignissimos consequatur quae hic cupiditate corporis, libero aliquid itaque dolor tenetur doloribus animi debitis!</p>
+                <div class="btn">Review Project</div>
+          </div>
+          <div class="project-card" alt="">
+                <img src="images/llm-logo.png" alt="">
+
+                <h3>LLM-Powered AI Assistant (In Development)</h3>
+
+                <p>Developing an AI-powered assistant leveraging large language models to provide intelligent responses and automate tasks</p>
+                <div class="btn">Review Project</div>
+          </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21533.40070593973!2d-52.76831798437502!3d47.57410979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38ed8abfb89%3A0x6b5a08da64519740!2sMemorial%20University%20of%20Newfoundland!5e0!3m2!1sen!2seg!4v1705967737835!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        
+          <button type="submit" onclick="sendMail()">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>   
+</body>
+</html>
