@@ -19,6 +19,17 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         message: document.getElementById('message').value
     };
 
+    function moveSlide(button, direction) {
+        const carousel = button.closest('.carousel');
+        const images = carousel.querySelectorAll('.carousel-image');
+        let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    
+        images[activeIndex].classList.remove('active');
+        let newIndex = (activeIndex + direction + images.length) % images.length;
+        images[newIndex].classList.add('active');
+    }
+    
+
     // Send email using EmailJS
     emailjs.send('service_ouz5zrj', 'template_b2h615h', params)
         .then(() => {
