@@ -23,12 +23,21 @@
         <h2>App Development Projects</h2>
         <div class="projects-box">
 
-            <div class="project-card" onclick="location.href='app2.html';">
-                <img src="images/projects/JobDone IMG.png" alt="JobDone Marketplace App UI">
+            <div class="project-card">
+                <div class="carousel">
+                  <img src="images/projects/JobDone IMG.png" class="carousel-image active" alt="JobDone UI 1">
+                  <img src="images/projects/JobDone1.png" class="carousel-image" alt="JobDone UI 2">
+                  <img src="images/projects/JobDone3.png" class="carousel-image" alt="JobDone UI 3">
+                  
+                  <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                  <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+                </div>
+              
                 <h3>JobDone - Task Marketplace App</h3>
                 <p>A Flutter & Firebase powered mobile marketplace that connects users needing tasks done with local service providers. Features job posting, real-time chat, offers, and a map-based search.</p>
-                <div class="btn">View Project</div>
-            </div>            
+                <div class="btn" onclick="location.href='app2.html'">View Project</div>
+              </div>
+               
 
             <div class="project-card" onclick="location.href='app2.html';">
                 <img src="images/projects/deardiaryimg.png" alt="">
@@ -56,5 +65,6 @@
     </section>
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
