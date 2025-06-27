@@ -331,6 +331,10 @@ body {
   background: var(--text-color);
 }
 
+.btn-row {
+  display: flex;
+  gap: 1rem; 
+}
 
 .contact-section {
   padding: 0 50px;
